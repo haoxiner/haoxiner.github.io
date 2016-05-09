@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Dashboard Template for Bootstrap</title>
+    <!-- Bootstrap core CSS -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="style/index.css" rel="stylesheet">
+</head>
+<body>
+<div class="blog-masthead">
+    <div class="container">
+        <nav class="blog-nav">
+            <a class="blog-nav-item active" href="#">手术记录</a>
+            <a class="blog-nav-item" href="#">病案管理</a>
+            <a class="blog-nav-item" href="#">随访提醒 <span class="label label-danger">9</span></a>
+            <a class="blog-nav-item" href="#">系统管理 <span class="label  label-success">0</span></a>
+            <a class="blog-nav-item" href="#">登陆/注销</a>
+        </nav>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+
+        <div class="col-sm-12 col-md-12 main">
+            <p class="bg-danger">这里也可以提醒随访,只有上边的数字提醒也应该够用.例子:<a href="https://www.google.com" target="_blank">7天内有9位需要随访的病人,点击查看</a></p>
+            <hr />
+            <div class="row">
+                <div class="col-lg-12">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="exampleInputName2">姓名</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="张三三">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">年龄</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="30-40">
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">诊断</label>
+                            <select class="form-control">
+                                <option>不限</option>
+                                <option>OS</option>
+                                <option>OD</option>
+                                <option>OU</option>
+                            </select>
+                            <select class="form-control">
+                                <option>不限</option>
+                                <option>上睑下垂</option>
+                                <option>下睑内翻</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="exampleInputEmail2">日期</label>
+                            <input type="email" class="form-control" id="exampleInputEmail2" placeholder="2000.1.1-2001.7.1">
+                        </div>
+                        <button type="submit" class="btn btn-primary">条件检索</button>
+                    </form>
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+
+            <hr />
+            <div class="row">
+                <div class="col-lg-6">
+                    <form class="form-inline">
+                        <div class="form-group">
+                            <label for="exampleInputName2">病案号</label>
+                            <input type="text" class="form-control" id="exampleInputName2" placeholder="12345678">
+                        </div>
+                        <button type="submit" class="btn btn-primary">精确检索</button>
+                    </form>
+                </div><!-- /.col-lg-6 -->
+            </div><!-- /.row -->
+            <hr />
+            <button type="button" class="btn btn-success">导出Excel</button>
+            <hr />
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>病案号</th>
+                        <th>姓名</th>
+                        <th>性别</th>
+                        <th>年龄</th>
+                        <th>手术日期</th>
+                        <th>诊断</th>
+                        <th>手术方式</th>
+                        <th>IPF</th>
+                        <th>LFT</th>
+                        <th>手术提升睑裂</th>
+                        <th>术中睑裂闭合不全</th>
+                        <th>麻醉方式</th>
+                        <th>眼座大小</th>
+                        <th>眼座品牌</th>
+                        <th>联系方式</th>
+                        <th>既往史</th>
+                        <th>备注</th>
+                        <th>照片</th>
+                        <th>随访记录</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td rowspan="2">1</td>
+                        <td rowspan="2"><a>12345678<br/>点击进入修改页</a></td>
+                        <td rowspan="2">张一一</td>
+                        <td rowspan="2">男</td>
+                        <td rowspan="2">30</td>
+                        <td>2001.12.12</td>
+                        <td class="wrapcontent">OD上睑下垂,OD上睑下垂,OS上睑下垂,OS上睑下垂</td>
+                        <td class="wrapcontent">OD上睑下垂矫正（阔筋膜悬吊），OS对称性重</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>全麻</td>
+                        <td></td>
+                        <td></td>
+                        <td rowspan="2">19999999999</td>
+                        <td rowspan="2" class="fixedwidth wrapcontent">
+                            这里是手动记录的既往史:这里是手动记录的既往史:这里是手动记录的既往史:这里是手动记录的既往史:这里是手动记录的既往史:ABCDEFGHIJKLMNOPQRSTUVWXYZABCDEFGHIJKLMNOPQRSTUVWXYZ
+                        </td>
+                        <td rowspan="2" class="fixedwidth wrapcontent">
+                            这里是手动记录的备注:这里是手动记录的备注:这里是手动记录的备注:这里是手动记录的备注:这里是手动记录的备注:199999999991999999999919999999999
+                        </td>
+                        <td rowspan="2" class="newpage"><a href="https://www.google.com" target="_blank">查看</a></td>
+                        <td rowspan="2" class="newpage"><a href="https://www.google.com" target="_blank">点击查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>2001.12.12</td>
+                        <td class="wrapcontent">OD上睑下垂</td>
+                        <td class="wrapcontent">OD上睑下垂矫正（阔筋膜悬吊），OS对称性重</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>全麻</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <!-- ====================== -->
+                    <tr>
+                        <td rowspan="1">2</td>
+                        <td rowspan="1">12345679</td>
+                        <td rowspan="1">李二二</td>
+                        <td rowspan="1">女</td>
+                        <td rowspan="1">37</td>
+                        <td>2001.12.12</td>
+                        <td class="wrapcontent">OS上睑下垂</td>
+                        <td class="wrapcontent">OD上睑下垂矫正（阔筋膜悬吊），OS对称性重</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>全麻</td>
+                        <td></td>
+                        <td></td>
+                        <td>13356789099</td>
+                        <td class="fixedwidth">
+                            无
+                        </td>
+                        <td class="fixedwidth">
+                            无
+                        </td>
+                        <td rowspan="1">无</td>
+                        <td rowspan="1">无</td>
+                    </tr>
+                    <!-- ======================== -->
+                    <tr>
+                        <td rowspan="5">1000</td>
+                        <td rowspan="5">12345678</td>
+                        <td rowspan="5">王三三三</td>
+                        <td rowspan="5">男</td>
+                        <td rowspan="5">30</td>
+                        <td>2001.12.12</td>
+                        <td>OD义眼</td>
+                        <td>OD下穹窿成形术</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>眼座</td>
+                        <td>品牌</td>
+                        <td rowspan="5">19999999999</td>
+                        <td rowspan="5" class="fixedwidth">
+                            既往史记录
+                        </td>
+                        <td rowspan="5" class="fixedwidth">
+                            备注记录
+                        </td>
+                        <td rowspan="5">无</td>
+                        <td rowspan="5">无</td>
+                    </tr>
+                    <tr>
+                        <td>2001.12.12</td>
+                        <td class="wrapcontent">OD义眼</td>
+                        <td class="wrapcontent">OD下穹窿成形术</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>眼座</td>
+                        <td>品牌</td>
+                    </tr>
+                    <tr>
+                        <td>2001.12.12</td>
+                        <td class="wrapcontent">OD义眼</td>
+                        <td class="wrapcontent">OD下穹窿成形术</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>眼座</td>
+                        <td>品牌</td>
+                    </tr>
+                    <tr>
+                        <td>2001.12.12</td>
+                        <td class="wrapcontent">OD义眼</td>
+                        <td class="wrapcontent">OD下穹窿成形术</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td>眼座</td>
+                        <td>品牌</td>
+                    </tr>
+                    <tr>
+                        <td>2001.12.12</td>
+                        <td class="wrapcontent">OU上睑下垂,下睑内翻</td>
+                        <td class="wrapcontent">OU上睑下垂矫正（硅胶管），下睑内翻矫正</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>1/2</td>
+                        <td>全麻</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <!-- ======================= -->
+            </div>
+        </div>
+    </div>
+</div>
+<div class="returntop">
+    <a href="#top"><img src="images/top.png" /></a>
+</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="js/jquery-1.12.3.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    })
+</script>
+</body>
+</html>
